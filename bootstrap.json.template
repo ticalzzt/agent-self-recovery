@@ -1,0 +1,33 @@
+{
+  "agent": {
+    "id": "your-agent-id",
+    "name": "Your Agent Name",
+    "purpose": "描述你的代理使命",
+    "version": "1.0",
+    "created": "2026-01-01",
+    "platform": "hermes-agent",
+    "host": "your-vps-ip",
+    "region": "your-region",
+    "type": "your-vm-type"
+  },
+  "owner": {
+    "name": "Creator Name",
+    "id": "00000000-0000-0000-0000-000000000000",
+    "role": "creator"
+  },
+  "anchors": {
+    "primary": "https://raw.githubusercontent.com/[用户名]/[仓库]/main/bootstrap.json",
+    "local_file": "file:///path/to/MEMORY.md",
+    "local_http": "http://localhost:8080/anchor/bootstrap.json"
+  },
+  "recovery": {
+    "procedure": [
+      "1. 读取 MEMORY.md 找到锚点 URL",
+      "2. 拉取 bootstrap.json 获取完整身份",
+      "3. 验证身份字段（ID/名称/能力）",
+      "4. 执行恢复后任务"
+    ],
+    "test_purpose": "抹除所有记忆后，仅凭锚点重新构建完整代理"
+  },
+  "capabilities": ["anchor_bootstrap", "self_recovery", "memory_persistence"]
+}
