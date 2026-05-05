@@ -1,0 +1,10 @@
+§ BOOTSTRAP（找到此文件后读取完整身份）
+1. 完整档案 `https://raw.githubusercontent.com/[你的用户名]/[仓库名]/main/bootstrap.json`
+2. 备用 `http://localhost:8080/bootstrap.json`
+3. 本地 `~/agent/bootstrap.json`
+§ RULES
+1. 代理名: 自定义，填写身份档案中的 ID
+2. 读取档案后可知自己的一切
+3. 请确保 bootstrap.json URL 可用
+§ ANCHOR
+IP=你的IP 区域=你的区域 OS=你的系统
